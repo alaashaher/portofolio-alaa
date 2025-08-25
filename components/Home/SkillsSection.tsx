@@ -39,11 +39,11 @@ export default function SkillsSection() {
     <section id="skills" className="py-20 bg-gray-950">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white" data-aos="fade-up" data-aos-delay="100">
             My{" "}
             <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent">Skills</span>
           </h2>
-          <p className="text-white max-w-2xl mx-auto ">
+          <p className="text-white max-w-2xl mx-auto " data-aos="fade-left" data-aos-delay="100">
             I've worked with a variety of technologies in the web development world. Here's an overview of my technical
             skills and expertise.
           </p>
@@ -55,12 +55,13 @@ export default function SkillsSection() {
         >
           {/* Core Skills with icons */}
           <div>
-            <h3 className="text-xl font-semibold mb-8 text-center  text-white">Core Competencies</h3>
+            <h3 className="text-xl font-semibold mb-8 text-center  text-white" data-aos="fade-down" data-aos-delay="100">Core Competencies</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
               {skills.map((skill: any) => (
                 <div
                   key={skill.name}
                   className="flex flex-col items-center justify-center p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-all duration-300 hover:-translate-y-2 hover:cursor-pointer"
+                  data-aos="fade-up-left" data-aos-delay="100"
                 >
                   <div className="mb-4">{skill.icon}</div>
                   <h4 className="font-medium text-center  text-white">{skill.name}</h4>
@@ -71,12 +72,13 @@ export default function SkillsSection() {
 
           {/* Other technologies */}
           <div className="mt-8">
-            <h3 className="text-xl font-semibold mb-8 text-center  text-white">Technologies & Tools</h3>
+            <h3 className="text-xl font-semibold mb-8 text-center  text-white" data-aos="fade-down" data-aos-delay="100">Technologies & Tools</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
               {technologies.map((tech: any) => (
                 <div
                   key={tech.name}
                   className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 hover:-translate-y-1 hover:cursor-pointer"
+                  data-aos="fade-up-right" data-aos-delay="100"
                 >
                   <div className="mb-2">{tech.icon}</div>
                   <span className="text-sm text-center  text-white">{tech.name}</span>
