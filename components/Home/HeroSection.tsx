@@ -46,7 +46,7 @@ export default function HeroSection() {
     return (
         <section
             id="home"
-            className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-gradient-to-b from-gray-950 via-gray-900 to-gray-950"
+            className="relative min-h-screen flex flex-col items-center justify-center text-center overflow-hidden bg-gradient-to-b from-blue-950 via-gray-900 to-gray-950 "
         >
             <div className="container px-4 md:px-6 z-10">
                 <span className={`px-4 py-1 mb-8 rounded-full text-sm font-medium bg-gray-800 hover:bg-gray-700 text-gray-300`}>
