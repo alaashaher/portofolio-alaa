@@ -57,11 +57,11 @@ export default function SkillsSection() {
           <div>
             <h3 className="text-xl font-semibold mb-8 text-center  text-white" data-aos="fade-down" data-aos-delay="100">Core Competencies</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
-              {skills.map((skill: any) => (
+              {skills.map((skill: any, index: any) => (
                 <div
                   key={skill.name}
                   className="flex flex-col items-center justify-center p-6 bg-gray-800 rounded-xl hover:bg-gray-700 transition-all duration-300 hover:-translate-y-2 hover:cursor-pointer"
-                  data-aos="fade-up-left" data-aos-delay="100"
+                  data-aos={index % 2 === 0 ? "fade-down-right" : "fade-down-left"} data-aos-delay="100"
                 >
                   <div className="mb-4">{skill.icon}</div>
                   <h4 className="font-medium text-center  text-white">{skill.name}</h4>
@@ -74,11 +74,12 @@ export default function SkillsSection() {
           <div className="mt-8">
             <h3 className="text-xl font-semibold mb-8 text-center  text-white" data-aos="fade-down" data-aos-delay="100">Technologies & Tools</h3>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
-              {technologies.map((tech: any) => (
+              {technologies.map((tech: any, index: any) => (
                 <div
                   key={tech.name}
                   className="flex flex-col items-center p-4 bg-gray-800 rounded-lg hover:bg-gray-700 transition-all duration-300 hover:-translate-y-1 hover:cursor-pointer"
-                  data-aos="fade-up-right" data-aos-delay="100"
+                  data-aos={index % 2 === 0 ? "fade-up-left" : "fade-up-right"} data-aos-delay="100"
+
                 >
                   <div className="mb-2">{tech.icon}</div>
                   <span className="text-sm text-center  text-white">{tech.name}</span>

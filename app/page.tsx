@@ -1,5 +1,6 @@
 "use client";
 import HeroSection from "@/components/Home/HeroSection";
+import MyWork from "@/components/Home/MyWork";
 import SkillsSection from "@/components/Home/SkillsSection";
 import Aos from "aos";
 import { useEffect } from "react";
@@ -14,6 +15,7 @@ export default function Home() {
     <div >
       <HeroSection />
       <SkillsSection />
+      {/* <MyWork /> */}
     </div>
   );
 }
