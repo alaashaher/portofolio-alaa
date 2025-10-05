@@ -1,5 +1,5 @@
 "use client"
-import Image from 'next/image'
+// import Image from 'next/image'
 import React from 'react'
 import { BsArrowRight } from 'react-icons/bs'
 import { DiGithub } from 'react-icons/di'
@@ -9,42 +9,60 @@ const MyWork = () => {
 
     const MyWorkArray = [
         {
-            title: "SiruMap",
-            description:
-                "portofolio company that view siruMap company website, its services, products and contact with us",
-            image: "https://img.freepik.com/free-psd/various-web-printable-templates-with-screen_23-2148450117.jpg?uid=R177832842&ga=GA1.1.1936951632.1729536474&semt=ais_hybrid&w=740",
+            title: "Siru Map",
+            description: "",
+            image: "https://sirubabapi.sirubab.com/Invoices/sirumaplogo.png",
             tags: ["React", "SCSS"],
             liveUrl: "https://sirumap.com/",
             githubUrl: "",
         },
         {
-            title: "SiruMap",
-            description:
-                "portofolio company that view siruMap company website, its services, products and contact with us",
-            image: "https://img.freepik.com/free-psd/various-web-printable-templates-with-screen_23-2148450117.jpg?uid=R177832842&ga=GA1.1.1936951632.1729536474&semt=ais_hybrid&w=740",
-            tags: ["React", "SCSS"],
-            liveUrl: "https://sirumap.com/",
+            title: "Siru sloutions",
+            description: "",
+            image: "https://sirusolutions.com/static/media/sirulogo.e4426ab452242b226b18.png",
+            tags: ["HTML", "CSS"],
+            liveUrl: "https://sirusolutions.com/",
             githubUrl: "",
         },
         {
-            title: "SiruMap",
+            title: "Noa-brand",
             description:
-                "portofolio company that view siruMap company website, its services, products and contact with us",
-            image: "https://img.freepik.com/free-psd/various-web-printable-templates-with-screen_23-2148450117.jpg?uid=R177832842&ga=GA1.1.1936951632.1729536474&semt=ais_hybrid&w=740",
+                "",
+            image: "https://noa-brand.com/assets/images/logo/logo.png",
             tags: ["React", "SCSS"],
-            liveUrl: "https://sirumap.com/",
+            liveUrl: "https://noa-brand.com/",
             githubUrl: "",
         },
         {
-            title: "SiruMap",
+            title: "Realist",
             description:
-                "portofolio company that view siruMap company website, its services, products and contact with us",
-            image: "https://img.freepik.com/free-psd/various-web-printable-templates-with-screen_23-2148450117.jpg?uid=R177832842&ga=GA1.1.1936951632.1729536474&semt=ais_hybrid&w=740",
-            tags: ["React", "SCSS"],
-            liveUrl: "https://sirumap.com/",
+                "",
+            image: "https://www.realist-invest.com/_next/static/media/logo1.1c6b416f.svg",
+            tags: ["Next Js", "Tilliwind"],
+            liveUrl: "realist-invest.com",
+            githubUrl: "",
+        },
+        {
+            title: "Tlt Hotels",
+            description:
+                "",
+            image: "http://tltsignaturehotel.tlt.co.com/assets/img1-2daf663a.png",
+            tags: ["Next Js", "Tilliwind"],
+            liveUrl: "http://tltsignaturehotel.tlt.co.com/",
+            githubUrl: "",
+        },
+        {
+            title: "Fatoorah",
+            description:
+                "",
+            image: "https://fatoorah.ai/wp-content/uploads/2025/02/%D9%85%D9%86%D8%B5%D8%A9-%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9.png",
+            tags: ["Next Js", "Tilliwind"],
+            liveUrl: "fatoorah.sa",
             githubUrl: "",
         },
 
+
+         
     ]
     return (
         <section id="projects" className="py-20 bg-gray-900">
@@ -52,7 +70,7 @@ const MyWork = () => {
                 <div className="text-center mb-16">
                     <h2
                         data-aos="fade-left" data-aos-delay="100"
-                        className="text-3xl md:text-4xl font-bold mb-4"
+                        className="text-3xl md:text-4xl font-bold mb-4 text-white"
                     >
                         My
                         <span className="bg-gradient-to-r from-purple-500 to-blue-500 bg-clip-text text-transparent"> Work</span>
@@ -76,20 +94,19 @@ const MyWork = () => {
                             data-aos={index % 2 === 0 ? "fade-right" : "fade-left"} data-aos-delay="100"
                             className="bg-gray-800 rounded-xl overflow-hidden hover:shadow-xl hover:shadow-purple-500/10 transition-all duration-300"
                         >
-                            <div className="relative h-60 overflow-hidden">
-                                <Image
+                            <div className="relative h-60 overflow-hidden d-flex items-center m-auto img-div">
+                                <img
                                     src={work.image || "/placeholder.svg"}
                                     alt={work.title}
-                                    fill
                                     className="object-cover transition-transform duration-500 hover:scale-110"
                                 />
                             </div>
                             <div className="p-6">
-                                <h3 className="text-xl font-bold mb-2">{work.title}</h3>
+                                <h3 className="text-xl font-bold mb-2 text-white">{work.title}</h3>
                                 <p className="text-gray-400 mb-4">{work.description}</p>
                                 <div className="flex flex-wrap gap-2 mb-6">
                                     {work.tags.map((tag) => (
-                                        <span key={tag} className="px-3 py-1 bg-gray-700 rounded-full text-xs">
+                                        <span key={tag} className="px-3 py-1 bg-gray-700 text-white rounded-full text-xs">
                                             {tag}
                                         </span>
                                     ))}

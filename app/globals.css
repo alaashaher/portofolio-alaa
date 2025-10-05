@@ -32,3 +32,10 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
+.img-div {
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+}
