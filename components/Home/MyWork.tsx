@@ -39,7 +39,7 @@ const MyWork = () => {
                 "",
             image: "https://www.realist-invest.com/_next/static/media/logo1.1c6b416f.svg",
             tags: ["Next Js", "Tilliwind"],
-            liveUrl: "realist-invest.com",
+            liveUrl: "http://realist-invest.com",
             githubUrl: "",
         },
         {
@@ -57,7 +57,7 @@ const MyWork = () => {
                 "",
             image: "https://fatoorah.ai/wp-content/uploads/2025/02/%D9%85%D9%86%D8%B5%D8%A9-%D9%81%D8%A7%D8%AA%D9%88%D8%B1%D8%A9.png",
             tags: ["Next Js", "Tilliwind"],
-            liveUrl: "fatoorah.sa",
+            liveUrl: "https://fatoorah.sa",
             githubUrl: "",
         },
 
